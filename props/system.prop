@@ -24,6 +24,9 @@ persist.dbg.wfc_avail_ovr=1
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=1
 
+# LMKD
+ro.config.low_ram=false
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
