@@ -54,3 +54,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
