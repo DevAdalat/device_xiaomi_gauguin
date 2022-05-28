@@ -425,6 +425,9 @@ on post-fs-data
     #Create dir for dolby
     mkdir /data/vendor/dolby 0770 media media
 
+    chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
