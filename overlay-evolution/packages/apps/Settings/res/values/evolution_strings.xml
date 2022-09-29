@@ -14,4 +14,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="build_maintainer_summary">iitzrohan (Rohan Thakur)</string>
     <string name="build_maintainer_telegram">https://t.me/iitzrohan</string>
+
+    <!-- Build status -->
+    <string name="build_status_summary">Exclusive test</string>
 </resources>
