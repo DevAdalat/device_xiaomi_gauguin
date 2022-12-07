@@ -24,7 +24,7 @@ TARGET_BOARD_PLATFORM := lito
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
     SettingsOverlayM2007J17C \
