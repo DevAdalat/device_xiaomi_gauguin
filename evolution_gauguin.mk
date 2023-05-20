@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
 
+#Inherit common evolution configurations
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Boot Animation
@@ -25,6 +26,10 @@ PRODUCT_NAME := evolution_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_ENABLE_BLUR := true
 
 # #SuperioeOS Stuff
 # BUILD_WITH_GAPPS := true
