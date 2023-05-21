@@ -12,8 +12,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="build_maintainer_summary">iitzrohan (Rohan Thakur)</string>
-    <string name="build_maintainer_telegram">https://t.me/iitzrohan</string>
+    <string name="build_maintainer_summary">Adalat Kumar</string>
+    <string name="build_maintainer_telegram">https://t.me/dev_kumar1</string>
 
     <!-- Build status -->
     <string name="build_status_summary">Exclusive test</string>
