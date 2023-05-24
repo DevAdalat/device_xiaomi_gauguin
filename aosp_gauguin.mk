@@ -12,8 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
 
-#Inherit common evolution configurations
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+#Inherit some common Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
+TARGET_APERTURE_CAM := true
+# TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -22,18 +27,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_gauguin
+PRODUCT_NAME := aosp_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_PICO_GAPPS := true
-TARGET_ENABLE_BLUR := true
-
-# #SuperioeOS Stuff
-# BUILD_WITH_GAPPS := true
-# TARGET_GAPPS_ARCH := arm64
-
-
+	
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
